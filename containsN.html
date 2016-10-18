@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="myForm" action="form_action.asp">
+  word1: <input type="text" name="num1" value="0"><br>
+  word2: <input type="text" name="num2" value="0"><br>
+  compare3: <input type="text" name="num3" value="0"><br>
+  number4: <input type="text" name="num4" value="0"><br>
+  
+</form>
+
+<p>Click the "Try it" button to display the value of each element in the form.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x =  parseInt(document.getElementById("myForm"));
+    var txt = 0;
+    awords.forEach(function (value){
+      if(value == word){
+       match=match+1;
+       };
+});
+
+    if(match>=num) 
+    {
+      match = 1;
+    };
+    else if(match<num)
+    {
+      match=0;
+    };
+    boolean(match);
+
+};
+
+    
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
