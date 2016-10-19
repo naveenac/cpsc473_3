@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    
+<p>Enter in numbers to find the largest number</p>
+    
+<form id="myForm" action="form_action.asp">
+  number1: <input type="text" name="num1" value="0"><br>
+  number2: <input type="text" name="num2" value="0"><br>
+  number3: <input type="text" name="num3" value="0"><br>
+  number4: <input type="text" name="num4" value="0"><br>
+  
+</form>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+function myFunction() {
+   var largest = function () {
+   var x =  parseInt(document.getElementById("myForm"));
+   
+    var big = 0;
+    
+    nums.forEach(function (value){
+    if(value > big){
+       big = value;
+    };
+});
+
+    document.getElementById("demo").innerHTML= big; 
+};
+}
+</script>
+
+<p>Enter in numbers to find the even number</p>
+    
+<form id="myForm" action="form_action.asp">
+  number1: <input type="text" name="num1" value="0"><br>
+  number2: <input type="text" name="num2" value="0"><br>
+  number3: <input type="text" name="num3" value="0"><br>
+  number4: <input type="text" name="num4" value="0"><br>
+  
+</form>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+function myFunction() {
+   var largest = function () {
+   var x =  parseInt(document.getElementById("myForm"));
+   
+    var big = 0;
+    
+    nums.forEach(function (value){
+    if(value > big){
+       big = value;
+    };
+});
+
+    document.getElementById("demo").innerHTML= big; 
+};
+}
+</script>
+  
+<p>Enter in numbers to find if there is more than one even number</p>
+<form id="myForm" action="form_action.asp">
+  number1: <input type="text" name="num1" value="0"><br>
+  number2: <input type="text" name="num2" value="0"><br>
+  number3: <input type="text" name="num3" value="0"><br>
+  number4: <input type="text" name="num4" value="0"><br>
+  
+</form>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+function myFunction() {
+    var x =  parseInt(document.getElementById("myForm"));
+    var txt = 0;    
+    var enumb = 0;
+    
+    nums.forEach(function (value){
+    if(value %2==0){
+       enumb=enumb+1;
+    };
+});
+
+    if(enumb>0)
+    {
+      enumb=1;
+    };
+    else if(enumb<1)
+    {
+      enumb=0;
+    };
+    boolean(enumb);
+
+};
+
+    document.getElementById("demo").innerHTML = txt;
+};
+</script>
+    
+<p>Enter in words to find if the array contains the word</p>
+    
+<form id="myForm" action="form_action.asp">
+  word1: <input type="text" name="num1" value="0"><br>
+  word2: <input type="text" name="num2" value="0"><br>
+  compare3: <input type="text" name="num3" value="0"><br>
+  number4: <input type="text" name="num4" value="0"><br>
+  
+</form>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+function myFunction() {
+    var x =  parseInt(document.getElementById("myForm"));
+    var txt = 0;
+    awords.forEach(function (value){
+      if(value == word){
+       match=match+1;
+       };
+});
+
+    if(match>=num) 
+    {
+      match = 1;
+    };
+    else if(match<num)
+    {
+      match=0;
+    };
+    boolean(match);
+
+};
+
+    
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+
+</body>
+</html>
